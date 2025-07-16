@@ -1,0 +1,25 @@
+.wallet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #f4f4f4;
+}
+
+.wallet-card {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.wallet-info p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}

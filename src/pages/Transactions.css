@@ -1,0 +1,234 @@
+/* 🌟 Saldo Box - Enhanced */
+.saldo-box {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  padding: 24px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(46, 125, 50, 0.3);
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.saldo-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  transform: rotate(30deg);
+}
+
+.saldo-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(46, 125, 50, 0.4);
+}
+
+.saldo-box h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+.saldo-box p {
+  margin: 12px 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 🌟 Action Buttons */
+.transactions-button {
+  margin-top: 16px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.transactions-button:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* 🌟 Transactions History - Enhanced */
+.transactions-history {
+  margin-top: 32px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.transactions-history h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.transactions-history h3::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 18px;
+  background: #4caf50;
+  border-radius: 2px;
+}
+
+/* 🌟 Transaction Items - Enhanced */
+.transaction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.transaction-item:hover {
+  transform: translateX(4px);
+  background: rgba(0,0,0,0.01);
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-category {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.transaction-category ion-icon {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-details {
+  flex-grow: 1;
+}
+
+.transaction-title {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.transaction-date {
+  font-size: 12px;
+  color: #888;
+}
+
+.transaction-amount {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.transaction-amount.income {
+  color: #2e7d32;
+}
+
+.transaction-amount.expense {
+  color: #d32f2f;
+}
+
+/* 🌟 Summary Section */
+.transactions-summary {
+  margin-top: 24px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+  padding: 12px;
+  background: rgba(0,0,0,0.02);
+  border-radius: 12px;
+  border: 1px dashed rgba(0,0,0,0.1);
+}
+
+/* 🌟 Saldo Dana - Enhanced */
+.saldo-dana {
+  background: linear-gradient(90deg, #00c853, #00e676);
+  padding: 24px;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 20px rgba(0, 200, 83, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.saldo-dana::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgba(255,255,255,0.3);
+}
+
+.saldo-title {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.saldo-angka {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* 🌟 Form Elements */
+.transactions-input,
+.transactions-select {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+}
+
+.transactions-input:focus,
+.transactions-select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
+
+/* 🌟 Empty State */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888;
+}
+
+.empty-state ion-icon {
+  font-size: 48px;
+  opacity: 0.3;
+  margin-bottom: 16px;
+}
+
+.empty-state p {
+  margin: 8px 0;
+}

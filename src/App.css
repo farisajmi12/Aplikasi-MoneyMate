@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  ion-app {
+    --ion-background-color: #f5f5f5;
+  }
+  
+  /* Header Styling */
+  h2, h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  /* IonContent Specific Styles */
+  .ion-padding {
+    padding: 20px;
+  }
+  
+  .ion-content {
+    padding-bottom: 60px;
+  }
+  
+  /* Buttons Styling */
+  ion-button {
+    --background: #007bff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+    font-weight: bold;
+  }
+  
+  ion-button:hover {
+    --background: #0056b3;
+  }
+  
+  /* Transaction History Styling */
+  .transactions-history {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .transaction-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .transaction-category {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .transaction-category ion-icon {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  
+  .transaction-amount {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .transaction-amount.income {
+    color: #28a745;
+  }
+  
+  .transaction-amount.expense {
+    color: #dc3545;
+  }
+  
+  /* Summary Styling */
+  .transactions-summary {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .transactions-summary span {
+    color: #007bff;
+  }
+  
+  .transactions-summary br {
+    margin-bottom: 10px;
+  }
+  
+  /* Tips Styling */
+  .tip-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  .tip-box ion-icon {
+    margin-right: 12px;
+    font-size: 24px;
+  }
+  
+  .tip-expense {
+    background-color: #ffe5e5;
+  }
+  
+  .tip-income {
+    background-color: #e5ffe5;
+  }
+  
+  .tip-food {
+    background-color: #fff3e0;
+  }
+  
+  .tip-transport {
+    background-color: #e0f7fa;
+  }
+  
+  .tip-neutral {
+    background-color: #e5e5ff;
+  }
+  
+  /* Smooth Transition for All Boxes */
+  .tip-box, .transaction-item, .transactions-history {
+    transition: all 0.3s ease;
+  }
+  
+  .tip-box:hover, .transaction-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .transactions-history:hover {
+    transform: scale(1.02);
+  }
+  
+  /* App.css */
+.custom-tab-bar {
+  --background: #ffffff;
+  --border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+.custom-tab-bar ion-tab-button {
+  --color: #888;
+  --color-selected: #4a00e0;
+}
+
+.transfer-tab {
+  --background: transparent;
+  position: relative;
+  top: -15px;
+}
+
+.transfer-button {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(74, 0, 224, 0.3);
+}
+
+.transfer-button ion-icon {
+  color: white;
+  font-size: 24px;
+}
+
+/* Animation for transfer button */
+.transfer-button {
+  transition: transform 0.2s ease;
+}
+
+.transfer-button:active {
+  transform: scale(0.9);
+}

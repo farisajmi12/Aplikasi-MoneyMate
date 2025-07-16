@@ -1,0 +1,56 @@
+/* Container utama */
+.analytics-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+    min-height: 100vh;
+  }
+  
+  /* Title */
+  .analytics-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4e54c8;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .analytics-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #4e54c8;
+    margin: 8px auto 0;
+    border-radius: 4px;
+  }
+  
+  /* Chart wrapper untuk kasih efek shadow & rounded */
+  .chart-wrapper {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Teks placeholder jika tidak ada data */
+  .no-data {
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+    margin-top: 40px;
+  }
+  
+  /* Tooltip custom */
+  .recharts-tooltip-wrapper {
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 600px) {
+    .analytics-title {
+      font-size: 20px;
+    }
+  }
+  
